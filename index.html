@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>YouTube</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #navbar{
+            border : 1px solid red;
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+        }
+        #navbar > div{
+            border : 1px solid teal;
+        }
+        #bar{
+            width: 80%;
+            height: 40px;
+        }
+        #forbar{
+            display: flex;
+        }
+        #glass{
+            width: 10%;
+            font-size: 25px;
+        }
+        #micro{
+            width: 8%;
+            margin-left: 2%;
+            border-radius: 50%;
+        }
+        #name{
+            
+            margin-top: auto;
+            margin-bottom: auto;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    <div id='navbar'>
+        <div id='name'>YouTube</div>
+        <div id='forbar'> 
+            <input id='bar' type="text" placeholder="search">
+            <button id='glass' type="submit"><i class="fa fa-search"></i></button>
+            <button id='micro'><i class="fa fa-microphone" style="font-size:36px"></i></button>
+        </div>
+        <div>
+            <i class="fa-solid fa-video"></i>
+        </div>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,63 @@
+body{
+    margin: 0px;
+}
+#navbar{
+    border : 1px solid red;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+#navbar > div{
+    border : 1px solid teal;
+}
+#bar{
+    width: 80%;
+    height: 40px;
+}
+#forbar{
+    display: flex;
+}
+#glass{
+    width: 10%;
+    font-size: 25px;
+}
+#micro{
+    width: 8%;
+    margin-left: 2%;
+    border-radius: 50%;
+}
+*{
+    box-sizing: border-box;
+}
+#endbar{
+    display: flex;
+    justify-content: space-around;
+
+}
+#endbar > i{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 25px;
+}
+#name{
+    display: flex;
+    margin-left: 5px;
+}
+#name > i{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#ex{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+#rod{
+    border : 1px solid red;
+    width: 60px;
+}

@@ -61,3 +61,24 @@ body{
     border : 1px solid red;
     width: 60px;
 }
+#sidebar{
+    position: fixed;
+    top: 43px;
+    left: 0px;
+    bottom: 0px;
+    width: 7%;
+    height: 100%;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+#content{
+    position: fixed;
+    top:43;
+    right: 0px;
+    width: 93%;
+    border: 1px solid green;
+    background-color: green;
+    height: 100%;
+
+}
+

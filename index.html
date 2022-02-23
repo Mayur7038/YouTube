@@ -29,14 +29,32 @@
             <i class="fa fa-bell" aria-hidden="true"></i>
             <i class="fa fa-circle" aria-hidden="true"></i>
         </div>
+
+
+
     </div>
-    
-    <div id="sidebar"></div>
-    <div id="content"></div>
-    
 
-    
+   
 
+    <div id="sidebar">
+        <div id="sbar1">
+            <i id="home" class="fa fa-home" aria-hidden="true"> </i>
+            <p id="sp1">Home</p>
+        </div>
+        <div id ="sbar2">
+            <i id="explore" class="fa fa-compass" aria-hidden="true"> </i>
+            <p id="sp2">Explore</p>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div id="content">
+            
+    </div>
 </body>
 
 </html>
@@ -44,50 +62,77 @@
 <script>
 
     let k = 0;
+
     
     function show(){
 
        if(k%2 === 0){
-           document.getElementById("sidebar").style.width = "20%";
-           document.getElementById("content").style.width = "80%";
+           document.getElementById("sidebar").style.width = "200px";
+           document.getElementById("content").style.marginLeft = "200px";
+           document.getElementById("sbar1").style.display = "Flex";
+           document.getElementById("sbar2").style.display = "Flex";
+           document.getElementById("sp1").style.marginLeft= "20px";
+           document.getElementById("sp2").style.marginLeft= "20px";
+           document.getElementById("sp1").style.fontSize = "20px";
+           document.getElementById("sp2").style.fontSize = "20px";
+
+
        }
        else{
-         document.getElementById("sidebar").style.width = "7%";
-         document.getElementById("content").style.width = "93%";
+         document.getElementById("sidebar").style.width = "100px";
+         document.getElementById("content").style.marginLeft = "100px";
+         document.getElementById("sbar1").style.display = "Block";
+         document.getElementById("sbar2").style.display = "Block";
+         document.getElementById("sp1").style.marginLeft= "0px";
+         document.getElementById("sp2").style.marginLeft= "0px";
+         document.getElementById("sp1").style.fontSize = "13px";
+           document.getElementById("sp2").style.fontSize = "13px";
 
        }
        k++;
     }
 
-    let api= "AIzaSyDK2qyPcUlZFG5J-RPv2BcMP2-DD5eBsdQ";
+    // let api= "AIzaSyDK2qyPcUlZFG5J-RPv2BcMP2-DD5eBsdQ";
 
-    const content = document.getElementById("content");
+    // // let api = "AIzaSyCUsVbBPwnsGK7lZHm-0MnM3mYVrdNKJzQ"
+
+    // const content = document.getElementById("content");
 
 
-    async function demo (){
+    // async function demo (){
 
-        try{
+    //     try{
 
-            const response = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=video&key=${api}&regionCode=In&maxResults=20`);
+    //         const response = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=video&key=${api}&maxResults=20`);
 
-            let data = await response.json();
+    //         let data = await response.json();
 
-            data = data.items
+    //         data = data.items
 
-            // appendData(data);
+    //         appendData(data);
 
-        }
-        catch(e){
-            console.error(e);
-        }
+    //     }
+    //     catch(e){
+    //         console.error(e);
+    //     }
 
-    }
-    demo();
+    // }
+    // demo();
 
     // function appendData(arr){  
     //     arr.forEach(({snippet , id:{videoId}})=>{
 
-            
+
+    //         let div = document.createElement("div");
+
+    //         let title = document.createElement("p");
+    //         title.textContent = snippet.title;
+
+    //         let thumbnail = document.createElement('img');
+    //         thumbnail.src = snippet.thumbnails.medium.url;
+
+    //         div.append(thumbnail,title);
+    //         content.append(div);
            
 
     //     })

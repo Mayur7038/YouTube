@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/video.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="name">
+        <i
+          id="rod"
+          onclick="show()"
+          class="fa fa-bars"
+          aria-hidden="true"
+          style="font-size: 30px"
+        >
+        </i>
+        <div id="ex">YouTube</div>
+      </div>
+      <div id="forbar">
+        <input id="bar" type="text" placeholder="search" />
+        <button id="glass" type="submit"><i class="fa fa-search"></i></button>
+        <button id="micro">
+          <i class="fa fa-microphone" style="font-size: 36px"></i>
+        </button>
+      </div>
+      <div id="endbar">
+        <i class="fa fa-video-camera" aria-hidden="true"></i>
+        <i class="fa fa-th" aria-hidden="true"></i>
+        <i class="fa fa-bell" aria-hidden="true"></i>
+        <i class="fa fa-circle" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <div id="sidebar">
+      <div id="sbar1">
+        <i id="home" class="fa fa-home" aria-hidden="true"> </i>
+        <p id="sp1">Home</p>
+      </div>
+      <div id="sbar2">
+        <i id="explore" class="fa fa-compass" aria-hidden="true"> </i>
+        <p id="sp2">Explore</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  let k = 0;
+
+  function show() {
+    if (k % 2 !== 0) {
+      document.getElementById("sidebar").style.display = "Block";
+    }
+    else{
+      document.getElementById("sidebar").style.display = "None";
+    }
+
+    k++;
+  }
+</script>

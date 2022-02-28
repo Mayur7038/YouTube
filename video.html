@@ -27,9 +27,9 @@
       </div>
       <div id="forbar">
         <input id="bar" type="text" placeholder="search" />
-        <button id="glass" type="submit"><i class="fa fa-search"></i></button>
+        <button id="glass" type="submit"><i id="one1"  class="fa fa-search"></i></button>
         <button id="micro">
-          <i class="fa fa-microphone" style="font-size: 36px"></i>
+          <i id="one2" class="fa fa-microphone" style="font-size: 36px"></i>
         </button>
       </div>
       <div id="endbar">
@@ -41,15 +41,15 @@
     </div>
 
     <div id="sidebar">
-      <div id="sbar1">
+      <div id="sbar1" onclick="redirect()">
         <i id="home" class="fa fa-home" aria-hidden="true"> </i>
-        <p id="sp1">Home</p>
+        <h1 id="sp1">Home</h1>
       </div>
       <div id="sbar2">
         <i id="explore" class="fa fa-compass" aria-hidden="true"> </i>
-        <p id="sp2">Explore</p>
+        <h1 id="sp2">Explore</h1>
       </div>
-    </div>
+    </div> 
 
     <div id="video">
       <div id="video1"></div>
@@ -125,8 +125,11 @@
   }
 
   function showVideo (data){
-       localStorage.setItem("clicked" , JSON.stringify(data));
-       console.log(JSON.stringify(data));
-       window.location.href = './video.html'
-   }
+    localStorage.setItem("clicked" , JSON.stringify(data));
+    window.location.href = './video.html'
+  }
+
+  function redirect (){
+    window.location.href = "./index.html"
+  }
 </script>

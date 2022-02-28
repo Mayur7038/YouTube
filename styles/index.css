@@ -1,18 +1,21 @@
 body{
     margin: 0px;
 }
+
+#youtube{
+    width: 150px;
+    height: 40px;
+}
 #navbar{
+    margin-top: 2px;
     overflow: hidden;
-    border : 1px solid red;
+    /* border : 1px solid red; */
     position: fixed;
     top: 0px;
     width: 100%;
     display: grid;
     grid-template-columns: 25% 50% 25%;
     background-color: white;
-}
-#navbar > div{
-    border : 1px solid teal;
 }
 #bar{
     width: 80%;
@@ -22,6 +25,7 @@ body{
     display: flex;
 }
 #glass{
+    height: 40px;
     width: 10%;
     font-size: 25px;
 }
@@ -29,7 +33,13 @@ body{
     width: 8%;
     margin-left: 2%;
     border-radius: 50%;
+    height: 40px;
 }
+.one{
+    background-color: rgba(255, 251, 251, 0.904);
+    border: 1px solid gray;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -60,14 +70,14 @@ body{
     margin-left: 20px;
 }
 #rod{
-    border : 1px solid red;
+    /* border : 1px solid red; */
+    margin-left: 5px;
     width: 60px;
 }
 #sidebar{
     position: fixed;
     top : 43px;
-    border : 1px solid aqua;
-    background-color: aqua;
+    /* border : 1px solid black; */
     width: 100px;
     height: 100%;
     text-align: center;
@@ -75,7 +85,8 @@ body{
 #content{
    margin-left: 100px;
    margin-top: 55px;
-   border : 10px solid red;
+   border-top : 0.5px solid rgb(219, 219, 219);
+   background-color: rgb(230, 228, 228);
    display: grid;
    grid-template-columns: repeat(4,1fr);
    grid-gap: 10px;
@@ -85,13 +96,13 @@ body{
 #content > div{
     margin-left: auto;
     margin-right: auto;
-    border : 1px solid purple;
+    /* border : 1px solid purple; */
 }
 
 #container{
     margin-top: 43px;
     display: flex;
-    border : 5px solid green;
+    /* border : 5px solid green; */
 }
 
 

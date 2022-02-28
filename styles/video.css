@@ -3,16 +3,13 @@ body{
 }
 #navbar{
     overflow: hidden;
-    border : 1px solid red;
+    /* border : 1px solid red; */
     position: fixed;
     top: 0px;
     width: 100%;
     display: grid;
     grid-template-columns: 25% 50% 25%;
     background-color: white;
-}
-#navbar > div{
-    border : 1px solid teal;
 }
 #bar{
     width: 80%;
@@ -22,6 +19,7 @@ body{
     display: flex;
 }
 #glass{
+    height: 40px;
     width: 10%;
     font-size: 25px;
 }
@@ -60,14 +58,14 @@ body{
     margin-left: 20px;
 }
 #rod{
-    border : 1px solid red;
+    /* border : 1px solid red; */
     width: 60px;
 }
 #sidebar{
     position: fixed;
     top : 43px;
-    border : 1px solid aqua;
-    background-color: aqua;
+    /* border : 1px solid aqua; */
+    background-color: white;
     width: 200px;
     height: 100%;
     text-align: center;
@@ -78,7 +76,7 @@ body{
 #content{
    margin-left: 100px;
    margin-top: 55px;
-   border : 10px solid red;
+   /* border : 10px solid red; */
    display: grid;
    grid-template-columns: repeat(4,1fr);
    grid-gap: 10px;
@@ -88,13 +86,13 @@ body{
 #content > div{
     margin-left: auto;
     margin-right: auto;
-    border : 1px solid purple;
+    /* border : 1px solid purple; */
 }
 
 #container{
     margin-top: 43px;
     display: flex;
-    border : 5px solid green;
+    /* border : 5px solid green; */
 }
 
 
@@ -134,7 +132,7 @@ p{
 
 #video{
     margin-top: 60px;
-    border : 1px solid red;
+    /* border : 1px solid red; */
     height: 10000px;
     display: grid;
     grid-template-columns: 69% 30%;
@@ -142,10 +140,9 @@ p{
 }
 
 #video > div{
-    border : 1px solid green;
+    /* border : 1px solid green; */
     margin: 20px;
 }
-
 
 #recommend > div{
     display: grid;
@@ -153,7 +150,7 @@ p{
     grid-gap: 10px;
     margin-bottom: 7px;
     width: 100%;
-    border : 1px solid red;
+    /* border : 1px solid red; */
     margin-right: 3px;
 }
 iframe{

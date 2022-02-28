@@ -18,17 +18,23 @@
       <div id="name">
         <i
           id="rod"
+          onclick="show()"
           class="fa fa-bars"
           aria-hidden="true"
           style="font-size: 30px"
         >
         </i>
-        <div id="ex">YouTube</div>
+        <div id="ex">
+
+          <img id="youtube" src="./image.png" alt="">
+        </div>
       </div>
       <div id="forbar">
         <input id="bar" type="text" placeholder="search" />
-        <button onclick="get()" id="glass" type="submit"><i class="fa fa-search"></i></button>
-        <button id="micro">
+        <button onclick="get()" id="glass" type="submit" class="one">
+          <i class="fa fa-search"></i>
+        </button>
+        <button id="micro" class="one">
           <i class="fa fa-microphone" style="font-size: 36px"></i>
         </button>
       </div>
@@ -39,9 +45,8 @@
         <i class="fa fa-circle" aria-hidden="true"></i>
       </div>
     </div>
-
     <div id="sidebar">
-      <div id="sbar1">
+      <div id="sbar1" onclick="redirect()">
         <i id="home" class="fa fa-home" aria-hidden="true"> </i>
         <p id="sp1">Home</p>
       </div>
@@ -51,7 +56,9 @@
       </div>
     </div>
 
-    <div id="content"></div>
+    <div id="content">
+    
+    </div>
   </body>
 </html>
 
@@ -81,7 +88,7 @@
     k++;
   }
 
-//   let api = "AIzaSyBw0zAo66MtlJ6Pb2NKOs2z1lsvW0l89yo"
+    // let api = "AIzaSyBw0zAo66MtlJ6Pb2NKOs2z1lsvW0l89yo"
 
   const content = document.getElementById("content");
 
@@ -139,15 +146,15 @@
       content.append(div);
     });
 
-    
   }
 
+  function showVideo(data) {
+    localStorage.setItem("clicked", JSON.stringify(data));
+    console.log(JSON.stringify(data));
+    window.location.href = "./video.html";
+  }
 
-   function showVideo (data){
-       localStorage.setItem("clicked" , JSON.stringify(data));
-       console.log(JSON.stringify(data));
-       window.location.href = './video.html'
-   }
-
-
+  function redirect() {
+    window.location.href = "./index.html";
+  }
 </script>
